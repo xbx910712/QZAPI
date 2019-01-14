@@ -8,7 +8,7 @@ theme:
 repo_name: TLingC/QZAPI
 repo_url: https://github.com/TLingC/QZAPI
 
-edit_uri: 'edit/master/'
+edit_uri: 'edit/master/docs'
 nav:    
   - '首页':
     - '关于文档': index.md
