@@ -1,0 +1,777 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>支持学校 - 强智教务系统API文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.11e41852.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="强智教务系统API文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                强智教务系统API文档
+              </span>
+              <span class="md-header-nav__topic">
+                支持学校
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/TLingC/QZAPI/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      TLingC/QZAPI
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href=".." title="首页" class="md-tabs__link md-tabs__link--active">
+          首页
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../api/authUser/" title="API" class="md-tabs__link">
+          API
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../related/php/" title="相关项目" class="md-tabs__link">
+          相关项目
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="强智教务系统API文档" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    强智教务系统API文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/TLingC/QZAPI/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      TLingC/QZAPI
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      首页
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        首页
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href=".." title="关于文档" class="md-nav__link">
+      关于文档
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        支持学校
+      </label>
+    
+    <a href="./" title="支持学校" class="md-nav__link md-nav__link--active">
+      支持学校
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="学校列表" class="md-nav__link">
+    学校列表
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/authUser/" title="登录" class="md-nav__link">
+      登录
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/getCurrentTime/" title="时间信息" class="md-nav__link">
+      时间信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/getKbcxAzc/" title="一周课程表" class="md-nav__link">
+      一周课程表
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      相关项目
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        相关项目
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../related/php/" title="PHP" class="md-nav__link">
+      PHP
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="学校列表" class="md-nav__link">
+    学校列表
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/TLingC/QZAPI/edit/master/support.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="_1">支持学校<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>以下支持学校是通过智校园APP登录时调用的获取学校信息API得出的汇总，数据来自 <a href="http://app.qzdatasoft.com:9876/qzkjapp//phone/provinceData">这里</a>。</p>
+<p>更新于2018-03-15</p>
+<h2 id="_2">学校列表<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>北京理工大学</li>
+<li>北京中医药大学</li>
+<li>对外经济贸易大学</li>
+<li>天津中医药大学</li>
+<li>天津职业技术师范大学</li>
+<li>大连工业大学</li>
+<li>锦州医科大学</li>
+<li>大连外国语大学</li>
+<li>长春工业大学</li>
+<li>吉林化工学院</li>
+<li>东北师范大学</li>
+<li>吉林师范大学</li>
+<li>东北石油大学</li>
+<li>黑龙江八一农垦大学</li>
+<li>东北林业大学</li>
+<li>黑龙江中医药大学</li>
+<li>大庆师范学院</li>
+<li>哈尔滨商业大学</li>
+<li>南京理工大学</li>
+<li>江苏科技大学</li>
+<li>河海大学文天学院</li>
+<li>南京农业大学</li>
+<li>中国药科大学</li>
+<li>江苏师范大学</li>
+<li>福建中医药大学</li>
+<li>武夷学院</li>
+<li>南昌大学抚州医学院</li>
+<li>南昌航空大学</li>
+<li>赣南医学院</li>
+<li>井冈山大学</li>
+<li>山东科技大学</li>
+<li>中国石油大学（华东）</li>
+<li>齐鲁工业大学</li>
+<li>青岛农业大学</li>
+<li>潍坊医学院</li>
+<li>菏泽医学专科学校</li>
+<li>临沂大学</li>
+<li>武汉科技大学</li>
+<li>湖北大学</li>
+<li>湖北文理学院</li>
+<li>中南财经政法大学</li>
+<li>湖北工程学院</li>
+<li>湘潭大学</li>
+<li>湖南大学</li>
+<li>中南大学</li>
+<li>湖南科技大学</li>
+<li>湖南理工学院</li>
+<li>衡阳师范学院</li>
+<li>湖南文理学院</li>
+<li>湖南商学院</li>
+<li>广州医科大学</li>
+<li>韶关学院</li>
+<li>海南大学</li>
+<li>广东财经大学</li>
+<li>广西医科大学</li>
+<li>广西中医药大学</li>
+<li>广西师范学院</li>
+<li>广西民族大学</li>
+<li>重庆交通大学</li>
+<li>四川美术学院</li>
+<li>宁夏医科大学</li>
+<li>长沙医学院</li>
+<li>江西科技学院</li>
+<li>四平职业大学</li>
+<li>镇江高等专科学校</li>
+<li>三峡大学</li>
+<li>长沙学院</li>
+<li>广州大学纺织服装学院</li>
+<li>大连大学国际学院</li>
+<li>湖北警官学院</li>
+<li>北京城市学院</li>
+<li>河北金融学院</li>
+<li>吉林警察学院</li>
+<li>黑龙江职业学院</li>
+<li>九江职业大学</li>
+<li>新余学院</li>
+<li>湖南工学院</li>
+<li>湖南财政经济学院</li>
+<li>广东金融学院</li>
+<li>电子科技大学中山学院</li>
+<li>南宁学院</li>
+<li>沈阳工程学院</li>
+<li>宁波大学国际交流学院</li>
+<li>宁波大学</li>
+<li>武汉商学院</li>
+<li>山东工商学院</li>
+<li>长春大学</li>
+<li>武汉城市职业学院</li>
+<li>长春医学高等专科学校</li>
+<li>广东外语外贸大学</li>
+<li>南昌大学</li>
+<li>天津医学高等专科学校</li>
+<li>首都经济贸易大学</li>
+<li>北京工商大学</li>
+<li>皖西学院</li>
+<li>湖南工程学院</li>
+<li>广东松山职业技术学院</li>
+<li>西京学院</li>
+<li>海口经济学院</li>
+<li>威海职业学院</li>
+<li>湖南交通职业技术学院</li>
+<li>湖南商务职业技术学院</li>
+<li>河北政法职业学院</li>
+<li>中国劳动关系学院</li>
+<li>北京财贸职业学院</li>
+<li>上海立达职业技术学院</li>
+<li>重庆大学城市科技学院</li>
+<li>华南农业大学珠江学院</li>
+<li>南充职业技术学院</li>
+<li>中南林业科技大学涉外学院</li>
+<li>湖南文理学院</li>
+<li>衡阳师范南岳学院</li>
+<li>黑龙江农业工程职业学院</li>
+<li>平顶山工业职业技术学院</li>
+<li>重庆城市管理职业学院</li>
+<li>江西司法警官职业学院</li>
+<li>江西交通职业技术学院</li>
+<li>眉山职业技术学院</li>
+<li>东营科技职业学院</li>
+<li>山东外贸职业学院</li>
+<li>武汉交通职业学院</li>
+<li>哈尔滨广厦学院</li>
+<li>云南师范大学商学院</li>
+<li>中国石油大学胜利学院</li>
+<li>首都师范大学科德学院</li>
+<li>北京工商大学嘉华学院</li>
+<li>桂林理工大学博文管理学院</li>
+<li>南京航空航天大学金城学院</li>
+<li>武汉工程科技学院</li>
+<li>北京理工大学珠海学院</li>
+<li>天津城市职业学院</li>
+<li>重庆城市职业学院</li>
+<li>宁波卫生职业技术学院</li>
+<li>云南城市建设职业学院</li>
+<li>湖南应用技术学院</li>
+<li>广西电力职业技术学院</li>
+<li>江西航空职业技术学院</li>
+<li>燕京理工学院</li>
+<li>长春信息技术职业学院</li>
+<li>湖南工艺美术职业学院</li>
+<li>湖南软件职业学院</li>
+<li>江西卫生职业学院</li>
+<li>江苏科技大学苏州理工学院</li>
+<li>遵义医药高等专科学校</li>
+<li>大庆医学高等专科学校</li>
+<li>武汉工程设计学院</li>
+<li>黑龙江幼儿师范高等专科学校</li>
+<li>中国矿业大学银川学院</li>
+<li>黑龙江护理高等专科学校</li>
+<li>南方科技大学</li>
+<li>重庆艺术工程职业学院</li>
+<li>辽宁民族师范高等专科学校</li>
+<li>赣州师范高等专科学校</li>
+<li>湖南幼儿师范高等专科学校</li>
+<li>天津滨海汽车工程职业学院</li>
+<li>百色职业学院</li>
+<li>上饶幼儿师范高等专科学校</li>
+<li>山东大学（威海）</li>
+<li>深圳技术大学</li>
+<li>吉林电子信息职业技术学院</li>
+<li>山东服装职业学院</li>
+<li>国防科学技术大学</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="关于文档" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                关于文档
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../api/authUser/" title="登录" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                登录
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.9e1f3b71.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
