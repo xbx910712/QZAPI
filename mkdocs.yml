@@ -1,0 +1,27 @@
+site_name: 强智教务系统API文档
+theme:
+  name: 'material'
+  language: 'zh'
+  feature:
+    tabs: true
+    
+repo_name: TLingC/QZAPI
+repo_url: https://github.com/TLingC/QZAPI
+
+edit_uri: 'edit/master/'
+nav:    
+  - '首页':
+    - '关于文档': index.md
+    - '支持学校': support.md
+  - 'API':
+    - '登录': api/authUser.md
+    - '时间信息': api/getCurrentTime.md
+    - '一周课程表': api/getKbcxAzc.md
+  - '相关项目':
+    - 'PHP': related/php.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
